@@ -38,7 +38,7 @@ public:
 	void sortedInsert(T const element);
 	Iterator begin() const;
 	Iterator end() const;
-	void mergeAlternatively(LinkedList<T>& that);
+	void mergeAlternatively(LinkedList<T>const & that);
 	~LinkedList();
 
 
@@ -431,7 +431,7 @@ void LinkedList<T>::sortedInsert(T const element)
 
 
 template <typename T>
-void LinkedList<T>::mergeAlternatively(LinkedList<T>& that)
+void LinkedList<T>::mergeAlternatively(LinkedList<T> const & that)
 {
 	Node<T>* curr1 = this->head;
 	Node<T>* curr2 = that.head;
