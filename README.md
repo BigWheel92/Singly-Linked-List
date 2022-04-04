@@ -28,6 +28,6 @@ Iterator begin() const; returns an iterator that points to the start of the link
 
 Iterator end() const; returns an iterator that points to the end of the linked list.
 
-void mergeAlternatively(LinkedList<T>const & that); merges the nodes of "that" into the list at alternative position. The list "that" remains unchanged.
+void mergeAlternatively(LinkedList<T> const & that); merges the nodes of "that" into the list at alternative position. The list "that" remains unchanged.
   
 ~LinkedList(); destructor
